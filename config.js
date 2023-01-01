@@ -1,15 +1,14 @@
 //============= Datos del Bot =============//
 
-global.owner = ['5219996125657']
+global.owner = ['918075379950']
 global.packname = '(☞ﾟ∀ﾟ)☞'
-global.author = '𝕊𝕚𝕞𝕡𝕝𝕖𝔹𝕠𝕥'
-global.wm = '𝕊𝕚𝕞𝕡𝕝𝕖𝔹𝕠𝕥'
-global.wait = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
-
+global.author = 'LIZAMWOL3.0-MD'
+global.wm = 'LIZAMWOL3.0-MD'
+global.wait = '*[❗] ʟᴏᴀᴅɪɴɢ...*'
 //============= urlButtons =============//
 
 global.textUrlbot = 'ɪɴꜱᴛᴀɢʀᴀᴍ'
-global.linkUrlbot = "https://www.instagram.com/ilmanhdyt_"
+global.linkUrlbot = "https://www.instagram.com/fayas__monu"
 
 //=========================================================================//
 
