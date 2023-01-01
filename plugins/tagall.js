@@ -7,7 +7,7 @@ let count = 1
 let teks = ''
 teks += `${count++} @${mem.id.split('@')[0]}\n` }
 teks += `\n⋙ LIZAMWOL3.0-MD ⋘`
-conn m.client.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, {quoted: m})
+conn client.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, {quoted: m})
 }
 handler.command = /^(invocar|tagall)$/i
 handler.group = true
