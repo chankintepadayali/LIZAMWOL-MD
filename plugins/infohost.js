@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
-m.reply(`
-soon back 😽ī.am/ꪶchankinte_padayaliꫂ
+m.reply(` information empty...!
+host details & more features soon 😽ī.am/ꪶchankinte_padayaliꫂ
 `)
 }
 handler.command = /^(infohost)$/i
