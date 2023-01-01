@@ -1,9 +1,9 @@
 let handler = async(m, { conn, text, participants }) => {
 let teks = `*|══✪〘 attention please  〙✪══|*\n\n * ❢dear:* ${text ? text : 'members'}\n\n`
-for (let participants of participants) {
+for (let mem of participants) {
 let count = 1
 let msg = ''
-teks += `${count++} @${participants.id.split('@')[0]}\n` }
+teks += `${count++} @${mem.split('@')[0]}\n` }
 teks += `\n⋙ LIZAMWOL3.0-MD ⋘`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, {quoted: m})
 }
