@@ -1,6 +1,6 @@
 let handler = async(m, { conn, text, participants }) => {
 let teks = `*|══✪〘 attention please  〙✪══|*\n\n * ❢dear:* ${text ? text : 'members'}\n\n`
-for (let mem of participants) {
+for (let participants of participants) {
 let count = 1
 let msg = ''
 teks += `${count++} @${participants.id.split('@')[0]}\n` }
