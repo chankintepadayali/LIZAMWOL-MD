@@ -1,7 +1,7 @@
 let handler = async(m, { conn, text, participants }) => {
 let teks = `*|══✪〘 attention please  〙✪══|*\n\n * ❢dear:* ${text ? text : 'members'}\n\n`
 for (let mem of participants) {
-let groupMetadata = m.isGroup ? await groupMetadata(m.chat).catch(e => {}) : ''
+let groupMetadata = m.isGroup ? await participants.groupMetadata(m.chat).catch(e => {}) : ''
 let participants = m.isGroup ? await groupMetadata.participants : ''
 let count = 1
 let teks = ''
