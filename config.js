@@ -1,6 +1,6 @@
 //============= Datos del Bot =============//
 
-global.owner = ['918075379950']
+global.owner = ['918075379950','919633687665']
 global.packname = '(☞ﾟ∀ﾟ)☞'
 global.author = 'LIZAMWOL3.0-MD'
 global.wm = 'LIZAMWOL3.0-MD'
