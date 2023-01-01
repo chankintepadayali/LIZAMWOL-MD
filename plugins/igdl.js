@@ -1,7 +1,7 @@
 let fetch = require('node-fetch')
 let instagramGetUrl = require('fg-ig')
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (!(args[0])) throw `*Need instagram link*: ${usedPrefix + command}link*`
+if (!(args[0])) throw `*Need instagram link*\nexample: ${usedPrefix + command} link*`
 let results = (await instagramGetUrl(args[0])).url_list[0]
 let shortUrl = await (await fetch(`https://tinyurl.com/api-create.php?url=${results}`)).text()
 let txt = `🔗 *Url:* ${shortUrl}`.trim()
