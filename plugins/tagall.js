@@ -1,8 +1,8 @@
 let handler = async(m, { conn, text, participants }) => {
-let teks = `*|══✪〘 attention please  〙✪══|*\n\n ❣*group:* ${text ? text : 'members'}\n\n`
+let teks = `*|══✪〘 attention please  〙✪══|*\n\n * ❢dear:* ${text ? text : 'members'}\n\n`
 for (let mem of participants) {
-teks += `🦋 @${mem.id.split('@')[0]}\n` }
-teks += `\n⋙ ©𝑆𝑖𝑚𝑝𝑙𝑒𝐵𝑜𝑡 ⋘`
+teks += `${count++} @${mem.id.split('@')[0]}\n` }
+teks += `\n⋙ LIZAMWOL3.0-MD ⋘`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, {quoted: m})
 }
 handler.command = /^(invocar|tagall)$/i
