@@ -1,7 +1,5 @@
 let fs = require('fs')
 let owner = ᴄʜᴀɴᴋɪɴᴛᴇ ᴩᴀᴅᴀyᴀʟɪ
-let uptime = process.uptime() * 1000
-let uptime = clockString(_uptime)
 let handler = async (m, { conn, usedPrefix }) => {
 let pp = './Menu2.jpg'
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
