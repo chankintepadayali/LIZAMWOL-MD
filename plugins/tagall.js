@@ -1,15 +1,19 @@
-let handler = async(m, { conn, text, participants, client}) => {
-let teks = `*|══✪〘 attention please  〙✪══|*\n\n * ❢dear:* ${text ? text : 'members'}\n\n`
-for (let mem of participants) {
-let groupMetadata = m.isGroup ? await client.groupMetadata(m.chat).catch(e => {}) : ''
-let participants = m.isGroup ? await groupMetadata.participants : ''
-let count = 1
-let teks = ''
-teks += `${count++} @${mem.id.split('@')[0]}\n` }
-teks += `\n⋙ LIZAMWOL3.0-MD ⋘`
-conn client.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, {quoted: m})
+let handler = async(m, { isOwner, isAdmin, conn, text, participants, args, command }) => {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
 }
-handler.command = /^(invocar|tagall)$/i
-handler.group = true
+let pesan = args.join` `
+let oi = `*𝙼𝙴𝙽𝚂𝙰𝙹𝙴:* ${pesan}`
+let teks = `*⺀𝙸 𝙽 𝚅 𝙾 𝙲 𝙰 𝙽 𝙳 𝙾 - 𝙶 𝚁 𝚄 𝙿 𝙾⺀*\n\n❏ ${oi}\n\n❏ *𝙴𝚃𝙸𝚀𝚄𝙴𝚃𝙰𝚂:*\n`
+for (let mem of participants) {
+teks += `┣➥ @${mem.id.split('@')[0]}\n`}
+teks += `*└* ⍟fayas » 𝗕𝗼𝘁⍟\n\n*▌│█║▌║▌║║▌║▌║▌║█*`
+conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
+}
+handler.help = ['tagall <mesaje>','invocar <mesaje>']
+handler.tags = ['group']
+handler.command = /^(tagall|invocar|invocacion|todos|invocación)$/i
 handler.admin = true
-module.exports = handler
+handler.group = true
+export default handler
