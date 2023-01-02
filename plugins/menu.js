@@ -1,4 +1,7 @@
 let fs = require('fs')
+let owner = ᴄʜᴀɴᴋɪɴᴛᴇ ᴩᴀᴅᴀyᴀʟɪ
+let _uptime = process.uptime() * 1000
+let uptime = clockString(_uptime)
 let handler = async (m, { conn, usedPrefix }) => {
 let pp = './Menu2.jpg'
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
@@ -8,7 +11,7 @@ let menu = `
 │ ➮*ᴏɪɪ🎈, ${taguser} :D*
 │ ➮*ʙᴏᴛ ɴᴀᴍᴇ : ʟɪᴢᴀᴍᴡᴏʟ-ᴍᴅ*
 │ ➮*ʀᴜɴᴛɪᴍᴇ : ${uptime}*  
-│ ➮*ᴏᴡɴᴇʀ : global.owner*
+│ ➮*ᴏᴡɴᴇʀ : ${owner}*
 │ ➮*ᴩʀᴇꜰɪx :.*
 │ ➮*ʜᴏꜱᴛ ɴᴀᴍᴇ : ᴛᴇʀᴍᴜx*
 │ ➮*ᴩʟᴀᴛꜰᴏʀᴍ : ʟɪɴᴜx*
