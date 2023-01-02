@@ -63,6 +63,7 @@ let menu = `
 ┣ ඬ⃟. _${usedPrefix}earrape *[nota de voz]*_
 ┣ ඬ⃟. _${usedPrefix}reverse *[nota de voz]*_
 ┣ ඬ⃟. _${usedPrefix}smooth *[nota de voz]*_
+    . _${usedPrefix}kick *<@tag>*_
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┃ *< OWNER >*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
