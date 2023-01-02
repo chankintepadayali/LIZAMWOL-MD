@@ -12,7 +12,8 @@ global.linkUrlbot = "https://www.instagram.com/fayas__monu"
 
 //=========================================================================//
 
-global.DeveloperMode = 'false' 
+global.DeveloperMode = 'false'
+global.suittag = ['918075379950']
 global.linkGC = []
 global.mods = [] 
 global.prems = [] 
