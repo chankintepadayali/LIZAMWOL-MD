@@ -1,6 +1,6 @@
 let fs = require('fs')
 let owner = ᴄʜᴀɴᴋɪɴᴛᴇ ᴩᴀᴅᴀyᴀʟɪ
-let _uptime = process.uptime() * 1000
+let uptime = process.uptime() * 1000
 let uptime = clockString(_uptime)
 let handler = async (m, { conn, usedPrefix }) => {
 let pp = './Menu2.jpg'
