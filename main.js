@@ -55,7 +55,7 @@ global.loadDatabase = async function loadDatabase() {
 }
 loadDatabase()
 
-global.authFile = `${opts._[0] || 'session'}.data.json`
+global.authFile = `${opts._[0] || 'Liza'}.json`
 const { state, saveState } = useSingleFileAuthState(global.authFile)
 
 const connectionOptions = {
@@ -63,7 +63,7 @@ const connectionOptions = {
   auth: state,
   logger: P({ level: 'silent'}),
   downloadHistory: false,
-  browser: ['SIMPLE-BOT','Safari','1.0.0']
+  browser: ['LIZA-MWOL-MD','Safari','1.0.0']
 }
 
 global.conn = simple.makeWASocket(connectionOptions)
@@ -85,7 +85,7 @@ async function connectionUpdate(update) {
     global.timestamp.connect = new Date
   }
   if (global.db.data == null) loadDatabase()
-  if (connection == 'open') {console.log(chalk.yellow('▣─────────────────────────────···\n│\n│❧ 𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴 𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 ✅\n│\n▣─────────────────────────────···'))}
+  if (connection == 'open') {console.log(chalk.yellow('▣─────────────────────────────···\n│\n│❧ 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳 𝚃𝙾 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 ✅\n│\n▣─────────────────────────────···'))}
 }
 
 process.on('uncaughtException', console.error)
@@ -129,8 +129,8 @@ global.reloadHandler = function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = '*╔══════════════*\n*╟❧ @subject*\n*╠══════════════*\n*╟❧ @user*\n*╟❧ ᴡᴇʟᴄᴏᴍᴇ/𝙰* \n*║*\n*╟❧ 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾:*\n*╟❧* @desc\n*║*\n*╟❧ 𝙳𝙸𝚂𝙵𝚁𝚄𝚃𝙰 𝚃𝚄 𝙴𝚂𝚃𝙰𝙳𝙸𝙰!!*\n*╚══════════════*'
-  conn.bye = '*╔══════════════*\n*╟❧ @user*\n*╟❧ ᴅᴏɴᴛ ᴄᴏᴍᴇ ʙᴀᴄᴋ ᴀɢᴀɪɴ 👋🏻* \n*╚══════════════*'  
+  conn.welcome = '*╔══════════════*\n*╟🌹 @subject*\n*╠══════════════*\n*╟🌹 @user*\n*╟🌹 ᴡᴇʟᴄᴏᴍᴇ/𝙰* \n*║*\n*╟🌹ɢʀᴏᴜᴩ ᴅᴇꜱᴄʀɪᴩᴛɪᴏɴ:*\n*╟🌹* @desc\n*║*\n*╟🌹 𝙳𝙸𝚂𝙵𝚁𝚄𝚃𝙰 𝚃𝚄 𝙴𝚂𝚃𝙰𝙳𝙸𝙰!!*\n*╚══════════════*'
+  conn.bye = '*╔══════════════*\n*╟🌹 @user*\n*╟🌹 ᴅᴏɴᴛ ᴄᴏᴍᴇ ʙᴀᴄᴋ ᴀɢᴀɪɴ 👋🏻* \n*╚══════════════*'  
   conn.spromote = '@user sekarang admin!'
   conn.sdemote = '@user sekarang bukan admin!'
   conn.handler = handler.handler.bind(conn)
