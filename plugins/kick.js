@@ -8,5 +8,6 @@ let handler = async (m, { conn, participants, usedPrefix, command }) 
  handler.command = /^(kick|echar|hechar|sacar)$/i 
  handler.admin = true 
  handler.group = true 
- handler.botAdmin = true 
- export default handler
+ handler.botAdmin = true 
+
+module.exports = handler
