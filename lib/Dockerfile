@@ -1,4 +1,4 @@
-FROM quay.io/sampandey001/secktor
+FROM quay.io/chankintepadayali/LIZAMWOL
 RUN git clone https://github.com/chankintepadayali/LIZAMWOL-MD /root/chankintepadayali
 WORKDIR /root/chankintepadayali/
 RUN npm install npm@latest
